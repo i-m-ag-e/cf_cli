@@ -1,0 +1,17 @@
+[project]
+name = "cf_cli"
+version = "0.1.0"
+authors = [
+    { name = "i-m-ag-e", email = "akulgupta0207@gmail.com" }
+]
+description = "A command line tool to organize Codeforces contests"
+requires-python = ">=3.8"
+dependencies = [
+    "typer",
+    "termcolor", 
+    "requests", 
+    "beautifulsoup4",
+]
+
+[project.scripts]
+cf = "cf_cli.cli:app"
